@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Passion+One:wght@400;700;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Sriracha & display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{  /*TUDO QUE ESTÁ NA TELA DO NAVEGADOR.*/
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body { /*TUDO DENTRO DO HTML E DO BODY OU SEJA TUDO QUE ESTA NA TELA.*/
+    min-height: 100vh; /*Altura minima do html e do body 100vh ou seja vai ocupar toda a tela.*/
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+}
+header{ /*TUDO DENTRO DO HEADER*/
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{ /*TODO TITÚLO H1 DO HEADER.*/
+    padding-top: 50px;
+    font-variant: small-caps;/*Deixa o início do texto com uma letra maiúscula.*/
+    font-family: var(--fonte2);
+    font-size: 60px; /*O projeto original tem 3vw, mais eu achei muito grande porq ele aumenta de acordo com a tela e na tela média ja ficava muito grande a fonte. coloquei um tamanho fixo com pixels(px) 60px.*/
+}
+header > p { /*TODOS OS PARÁGRAFOS DENTRO DO HEADER.*/
+    padding-bottom: 50px;
+}
+header a, footer a { /*TODOS OS LINKS DENTRO DO HEADER, E TODOS OS LINKS DENTRO DO FOOTER.*/
+    color: white;
+    text-decoration: none; /*Tira a decoração do texto.*/
+    font-weight: bolder; /*Espessura da fonte, bolder mais ousado ou seja bem forte.*/
+}
+header a:hover, footer a:hover{ /*UM HOVER NO LINK DO HEADER E UM HOVER NO LINK DO FOOTER.*/
+    text-decoration: underline;
+}
+section{ /*TODAS AS SECTIONS*/
+    padding-top: 10vh; /*10% da altura do vh ele diminui e aumenta conforme a tela do navegador.*/
+    padding-bottom: 10vh; /*10% da altura do vh le diminui e aumenta conforme a tela do navegador*/
+    line-height: 2em; /*Um espaço de 2em entre as linhas do texto.*/
+    padding-left: 30px; /*Um  espaço de 30px no lado esquerdo do parágrafo das sections.*/
+    font-family: var(--fonte3);
+    font-size: 25px; /*O projeto original tem 3.5vw, mais eu achei muito grande porq ele aumenta de acordo com a tela e na tela média ja ficava muito grande a fonte. coloquei um tamanho fixo com pixels(px) 25px.*/
+
+}
+section > p{
+    padding-bottom: 2em; /*Espaço abaixo dos parágrafos do sections.*/
+    
+}
+section.normal{ /*TODAS AS SECTIONS DE CLASS NORMAL.*/
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+section.imagem{ /*TODAS AS SECTIONS DE CLASS IMAGEM.*/
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+section.imagem > p{ /*TODOS OS PARÁGRAFOS DAS SECTIONS IMAGEM.*/
+    display: inline-block; /*A caixa se adapta ao tamanho do conteúdo porq ela se tornou block.*/
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+    
+}
+section#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover; /*Vai cobrir o container inteiro e muda o tamnho de acordo com o tamanho do container, se aumentar e diminuir ele aumenta e diminui.*/
+    background-attachment: fixed; /*Deixa a imagem fixada.*/
+}
+section#img02{
+    background-image: url('imagens/background002.jpg');
+    background-position: right bottom;
+    background-size: cover; /*Vai cobrir o container inteiro e muda o tamnho de acordo com o tamanho do container, se aumentar e diminuir ele aumenta e diminui.*/
+    background-attachment: fixed; /*Deixa a imagem fixada.*/
+}
+footer{ /*TUDO DENTRO DO FOOTER.*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
