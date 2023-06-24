@@ -58,7 +58,19 @@ section > p{
 section.normal{ /*TODAS AS SECTIONS DE CLASS NORMAL.*/
     background-color: white;
     color: rgb(0, 0, 0);
+   
 }
+section.normal > #paragrafo, a {
+    color: black;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    
+}
+section.normal > #paragrafo > a:hover{
+     text-decoration: underline;
+}
+
 section.imagem{ /*TODAS AS SECTIONS DE CLASS IMAGEM.*/
     background-color: rgb(51, 51, 51);
     color: white;
